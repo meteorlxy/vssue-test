@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vssue Demo</title>
+  <link rel="stylesheet" href="./vssue.min.css">
+</head>
+<body>
+  <div id="vssue"> </div>
+  <script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+  <!-- <script src="./vssue.github.min.js"></script> -->
+  <!-- <script src="./vssue.gitlab.min.js"></script> -->
+  <!-- <script src="./vssue.bitbucket.min.js"></script> -->
+  <script>
+    new Vue({
+      el: '#vssue',
+      render: h => h('Vssue', {
+        props: {
+          title: 'Vssue Demo',
+          issueId: 1,
+          options: {
+            owner: 'meteorlxy',
+            repo: 'vssue-test',
+            // github
+            // clientId: '9fb56bc9476389533577',
+            // clientSecret: '00d917a5f2496051f20827ce3e2673bc3dc2cd7b',
+
+            // gitlab
+            // clientId: '1c8dd5212c955fb0761052ffa1862abcc0e2693febd11f1e4252dfbdf34fd0e8',
+
+            // bitbucket
+            // clientId: 'zRbmAR7m2tjCvXFa5X',
+          },
+        }
+      })
+    })
+  </script>
+</body>
+</html>
